@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>param test</title>
+<style>
+</style>
+</head>
+<body>
+	<a href="http://localhost:9090/ServletJsp/HelloServlet">full - 외부 사이트 접근 시</a>
+	<a href="/ServletJsp/HelloServlet">절대 경로 - root('/')를 기준으로 위치 설정</a>
+	<a href="HelloServlet">상대경로 - 나의 현재 위치에 따라 경로 설정</a>
+	<hr>
+
+	<h1>login by get</h1>
+	<form method="get" action="/ServletJsp/param">
+		<fieldset>
+			<legend>사용자 정보 입력</legend>
+			<label for="name">이름</label>
+			<input type="text" name="name" value="홍길동" />
+			<br> <label for="pass">비번</label>
+			<input type="password" name="pass" value="12345" />
+			<br>
+		</fieldset>
+		<input type="submit" value="로그인" />
+	</form>
+
+	<hr>
+
+	<h1>login by post</h1>
+	<form method="post" action="/ServletJsp/param">
+		<fieldset>
+			<legend>사용자 정보 입력</legend>
+			<label for="name">이름</label>
+			<input type="text" name="name" value="홍길동" />
+			<br> <label for="pass">비번</label>
+			<input type="password" name="pass" value="12345" />
+			<br>
+		</fieldset>
+		<input type="submit" value="로그인" />
+	</form>
+</body>
+</html>

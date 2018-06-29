@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.RegionsMapper">
+	<!-- TODO: regions 정보를 저장하도록 insert 태그를 작성하시오. -->
+
+	<!-- END: -->
+	
+	<!-- TODO: regions 정보를 수정하도록 update 태그를 작성하시오. -->
+
+	<!-- END: -->
+	
+	<!-- regionId에 해당하는 정보를 삭제하도록 delete 태그를 작성하시오. -->
+
+	<!-- END: -->
+	
+	<!-- TODO: regionId에 해당하는 정보를 Regions 타입으로 리턴하시오. -->
+
+	<!-- END: -->
+	
+	<!-- TODO: 모든 국가 정보를 리턴하시오. -->
+
+	<!-- END: -->
+</mapper>

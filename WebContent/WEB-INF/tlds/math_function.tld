@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	
+	<description>el에서의 static 함수 호출</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>math</short-name>
+	<function>
+		<name>squareroot</name>
+		<function-class>java.lang.Math</function-class>
+		<function-signature>double sqrt(double)</function-signature>
+	</function>
+	<function>
+		<name>getMax</name>
+		<function-class>java.lang.Math</function-class>
+		<function-signature>int max(int, int)</function-signature>
+	</function>
+	<function>
+		<name>parseint</name>
+		<function-class>java.lang.Integer</function-class>
+		<function-signature>int parseInt(java.lang.String)</function-signature>
+	</function>
+</taglib>

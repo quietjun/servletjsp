@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+	ID 없이 로그인 시도<br>
+	<form method="get" action="controller.jsp">
+		<label for="id">ID</label>
+		<input type="text" name="id" /><br>
+		<label for="pass">PASS</label>
+		<input type="password" name="pass"/><br> 
+		<input type="submit" value="전송" /> 
+		<input type="reset" value="다시" />
+	</form>
+	<hr>
+	ID로 로그인 시도 : using jsp<br>
+	<form method="get" action="/ServletJsp/ch06/jspforward/login/controller.jsp">
+		<label for="id">ID</label>
+		<input type="text" name="id" value="andy" /><br>
+		<label for="pass">PASS</label>
+		<input type="password" name="pass" value="1234" /><br> 
+		<input type="submit" value="전송" /> 
+		<input type="reset" value="다시" />
+	</form>
+	
+	<hr>
+	ID로 로그인 시도 : using servlet<br>
+	<form method="get" action="/ServletJsp/logincontroller">
+	<!-- <form method="get" action="logincontroller"> -->
+		<label for="id">ID</label>
+		<input type="text" name="id" value="andy" /><br>
+		<label for="pass">PASS</label>
+		<input type="password" name="pass" value="1234" /><br> 
+		<input type="submit" value="전송" /> 
+		<input type="reset" value="다시" />
+	</form>
+</body>
+</html>

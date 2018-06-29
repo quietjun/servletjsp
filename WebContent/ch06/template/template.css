@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+.list_menu {
+	color:red;
+}
+.list_menu li{
+	display:inline;
+	float: left;
+	margin:0 20px;
+}
+hr{
+	clear:both;
+}
+
+#main_article {
+	margin:0 auto;
+	
+	border: solid 1px green;
+	/* width: 600px; */
+	/* -webkit-display:box; */
+	display: -webkit-box;
+	/* -webkit-box-orient:vertical; */
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction:normal;
+	/* -webkit-box-direction: reverse; */
+	/* -webkit-box-pack:center; */
+	/* -webkit-box-pack: justify; */
+	-webkit-box-pack:left;
+	-webkit-box-align:center;
+}
