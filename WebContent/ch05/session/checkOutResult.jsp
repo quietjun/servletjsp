@@ -8,6 +8,6 @@
 </head>
 <body>
 	계산 처리 되었습니다.
-	<a href="/ServletJsp/ch05/session/main.jsp">메인으로</a>
+	<a href="<%=request.getContextPath() %>/ch05/session/main.jsp">메인으로</a>
 </body>
 </html>

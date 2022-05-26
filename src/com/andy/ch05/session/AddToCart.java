@@ -17,21 +17,23 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/addToCart")
 public class AddToCart extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AddToCart() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public AddToCart() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	@SuppressWarnings("unchecked")
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String product = request.getParameter("product");
+		System.out.println(product);
 		HttpSession session = request.getSession();
 		Object cartObj = session.getAttribute("cart");
 		ArrayList<String> products = null;

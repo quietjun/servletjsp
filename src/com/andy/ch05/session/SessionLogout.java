@@ -19,12 +19,13 @@ import org.slf4j.LoggerFactory;
 public class SessionLogout extends HttpServlet {
 	private static final Logger logger = LoggerFactory.getLogger(SessionLogout.class);
 	private static final long serialVersionUID = 1L;
-       
+
 
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
 		session.invalidate();
@@ -35,7 +36,7 @@ public class SessionLogout extends HttpServlet {
 		 * dispatcher.forward(request, response);
 		 */
 		logger.trace("send redirect 실행");
-		response.sendRedirect("/ServletJsp/ch05/session/loginform.jsp");
+		response.sendRedirect(request.getContextPath()+"/ch05/session/loginform.jsp");
 	}
 
 }

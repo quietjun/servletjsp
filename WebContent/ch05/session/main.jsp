@@ -18,7 +18,7 @@
 	<a href="<%=request.getContextPath()%>/sessionLogout">logout</a>
 	<hr>
 	<h1>상품 선택</h1>
-	<form method="post" action="<%=toEncode(response, "/ServletJsp/addToCart") %>">
+	<form method="get" action="<%=toEncode(response, "addToCart") %>">
 		<select name="product">
 			<option value="apple">사과</option>
 			<option value="orange">오렌지</option>
