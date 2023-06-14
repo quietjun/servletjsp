@@ -1,4 +1,0 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
-<%
-	java.util.Date current_time = new java.util.Date();
-%>
